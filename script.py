@@ -42,4 +42,4 @@ def send(img, title):
 while True:
     xkcd()
     explosm()
-    time.sleep(21600)
+    time.sleep(10)
