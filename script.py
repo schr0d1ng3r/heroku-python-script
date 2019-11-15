@@ -4,10 +4,7 @@ from lxml import html
 import time
 import random
 import os
-from os import environ
-from flask import Flask
 
-app = Flask(__name__)
 TOKEN = os.environ["tik"]
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 cid = str(os.environ['cid'])
@@ -43,7 +40,6 @@ def send(img, title):
     print(img, title)
 
 while True:
-    app.run(environ.get('PORT'))
     xkcd()
     explosm()
-time.sleep(21600)
+    time.sleep(21600)
